@@ -1,0 +1,21 @@
+# IDEA project
+.idea
+*.iml
+out
+
+# Eclipse project
+.settings
+.classpath
+.project
+bin
+
+# System files
+.DS_Store
+
+# Generated files
+lib
+web/WEB-INF/lib
+output
+dist
+translation.properties
+
