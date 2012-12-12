@@ -46,7 +46,7 @@
     <target name="compile" depends="lib">
         <sequential>
             <mkdir dir="output/classes"/>
-            <javac classpathref="module.compile.classpath" srcdir="src" destdir="output/classes" encoding="UTF-8" />
+            <javac classpathref="module.compile.classpath" srcdir="src" destdir="output/classes" encoding="UTF-8" debug="true"/>
             <copy-resources src.dir="src" output.dir="output/classes"/>
         </sequential>
     </target>
@@ -66,7 +66,8 @@
                     srcdir="test"
                     destdir="output/tests"
                     encoding="UTF-8"
-                    classpathref="module.test.classpath"/>
+                    classpathref="module.test.classpath"
+                    debug="true"/>
             <copy-resources src.dir="test" output.dir="output/tests"/>
         </sequential>
     </target>
